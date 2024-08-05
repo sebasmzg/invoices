@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typescript Tutorial</title>
+    <link rel="stylesheet" href="./syles/styles.css">
+</head>
+<body>
+    <h1>Invoices - Payments</h1>
+    
+    
+    <form class="new-item-form">
+        <div class="field">
+            <label>Type</label>
+            <select id="type">
+                <option value="invoice">Invoice</option>
+                <option value="payment">Payment</option>
+            </select>
+        </div>
+        <div class="field">
+            <label for="tofrom">To / From:</label>
+            <input type="text" id="tofrom" placeholder="To / From">
+        </div>
+        <div class="field">
+            <label for="detail">Details:</label>
+            <input type="text" id="detail" placeholder="Details">
+        </div>
+        <div class="field">
+            <label for="amount">Amount ($):</label>
+            <input type="number" id="amount" placeholder="Amount">
+        </div>
+        <button>Add</button>
+    </form>
+    <div class="wrapper">
+        
+
+        <!-- Outpput list -->
+        
+        <ul class="item-list"></ul>
+    </div>
+
+    <script type="module" src="./index.js"></script>
+</body>
+</html>
